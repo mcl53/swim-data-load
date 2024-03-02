@@ -1,0 +1,4 @@
+{
+    "python.defaultInterpreterPath": "${workspaceFolder}/swim_data_load_venv/Scripts/python.exe",
+    "python.terminal.activateEnvInCurrentTerminal": true
+}
