@@ -37,10 +37,10 @@ for pdf_file in pdf_files:
 
     for page_num, page in enumerate(reader.pages):
         data_to_insert.append({
+            "loaded_datetime": load_datetime,
             "file_name": pdf_file.name,
             "page_number": page_num + 1,
-            "page_text": page.extract_text(),
-            "loaded_datetime": load_datetime
+            "page_text": page.extract_text()
         })
 
 dataframe_to_insert = pandas.DataFrame(data_to_insert)
